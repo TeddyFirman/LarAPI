@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "c5a8fd61-bcdf-40a0-9da6-f08534e3cbd4",
+		"name": "LarAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "12266282"
+	},
+	"item": [
+		{
+			"name": "index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/buku"
+			},
+			"response": []
+		},
+		{
+			"name": "show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/buku/1"
+			},
+			"response": []
+		},
+		{
+			"name": "store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "judul",
+							"value": "porto",
+							"type": "text"
+						},
+						{
+							"key": "pengarang",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_publikasi",
+							"value": "2022-10-12",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/buku"
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "judul",
+							"value": "porto 2612",
+							"type": "text"
+						},
+						{
+							"key": "pengarang",
+							"value": "always_wrong & always_true",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_publikasi",
+							"value": "2022-10-12",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/buku/13",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"buku",
+						"13"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "destroy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/buku/1"
+			},
+			"response": []
+		}
+	]
+}
